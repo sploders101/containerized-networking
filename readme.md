@@ -11,7 +11,7 @@ I set up pi-hole as my DNS & DHCP server since it has a nice GUI, and the fact t
 
 \[ Enter Ampere \]
 
-My servers are powerful. I often run fairly heavy workloads on them and need that extra performance. However, I don't want the power draw that comes with it. I decided to switch to arm. Most of my workloads already support it, and I've seen a lot of glowing reviews on Ampere Altra CPUs, so I decided to give it a shot, and... wow... I almost didn't even need a fan. Even under intense load, a cheap crappy 40mm fan did perfectly well, and I wasn't compromising on performance. All that with a fraction of the load of my old servers.
+My servers are powerful. I often run fairly heavy workloads on them and need that extra performance. However, I don't want the power draw that comes with it. I decided to switch to arm. Most of my workloads already support it, and I've seen a lot of glowing reviews on Ampere Altra CPUs, so I decided to give it a shot, and... wow... I almost didn't even need a fan. Even under intense load, a cheap crappy 40mm fan did perfectly well, and I wasn't compromising on performance. All that with a fraction of the power draw of my old servers.
 
 Time to go multi-arch! Thankfully, Kubernetes already supports multi-arch, but Proxmox doesn't. So, what do I do now? Bare-metal deployment! My servers already have IPMI on a closed network piped into my bedroom, so that's good enough for me. If I can get everything moved into Kubernetes, I don't need the features that Proxmox gets me. Not everything can be migrated though. I have a router VM and a VPS VM that I host for a friend.
 
